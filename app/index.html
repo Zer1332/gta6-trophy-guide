@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA 6 Trophy Guide — All 55 PS5 Trophies, Roadmap &amp; Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: cited guides, roadmap to the platinum, missable flags, checklist with export and import.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div>
+      <h1>GTA 6 Trophy Guide</h1>
+      <p class="subtitle">All 55 PS5 trophies &middot; 1 platinum &middot; 2 gold &middot; 6 silver &middot; 46 bronze &middot; 28 hidden &middot; single-player only, no online trophies &middot; about 200 hours to platinum</p>
+    </div>
+    <div class="progress-box" id="progress-box" aria-live="polite">
+      <div class="progress-line"><strong id="progress-count">0 / 55 earned</strong><span id="progress-pct">0%</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      <p class="progress-sub" id="progress-sub">Platinum “Vice Got a Price!” unlocks when the other 54 are earned.</p>
+    </div>
+  </div>
+</header>
+
+<nav class="toolbar" aria-label="Tracker controls">
+  <input id="search" type="search" placeholder="Search a trophy or mission…" aria-label="Search trophies">
+  <div class="filters" id="filters" role="group" aria-label="Filter by kind">
+    <button data-filter="all" class="active">All 55</button>
+    <button data-filter="story">Story</button>
+    <button data-filter="missable">Missable</button>
+    <button data-filter="collectibles">Collectibles</button>
+    <button data-filter="activities">Activities</button>
+    <button data-filter="online">Online</button>
+    <button data-filter="earned">Earned</button>
+    <button data-filter="todo">To do</button>
+  </div>
+  <div class="tools">
+    <label class="spoiler-toggle"><input type="checkbox" id="spoiler"> <span>Hide story spoilers</span></label>
+    <button id="export-btn" type="button">Export progress</button>
+    <button id="import-btn" type="button">Import progress</button>
+    <input type="file" id="import-file" accept=".json,application/json" hidden>
+    <button id="reset-btn" type="button">Reset</button>
+  </div>
+</nav>
+
+<main>
+  <div class="content">
+    <section class="list-section" aria-labelledby="list-title">
+      <h2 id="list-title">Trophy checklist <span id="list-count"></span></h2>
+      <p class="hint">Tick a trophy when you earn it — progress saves in this browser automatically. Click any trophy to open its guide and sources.</p>
+      <p class="empty" id="empty-msg" hidden>No trophies match this filter. There are no online trophies in GTA 6 — all 55 unlock in single-player.</p>
+      <ul class="trophy-list" id="trophy-list"></ul>
+    </section>
+
+    <aside class="detail" id="detail" aria-live="polite">
+      <h2 id="detail-title">Trophy guide</h2>
+      <div id="detail-body">
+        <p class="detail-empty">Select a trophy from the checklist to see its guide, when it can be missed, and the sources behind each step.</p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="roadmap" id="roadmap" aria-labelledby="roadmap-title">
+    <h2 id="roadmap-title">Roadmap to the platinum — Vice Got a Price!</h2>
+    <p class="roadmap-intro">One playthrough is enough: there is no mission replay, but free roam continues after the credits and almost everything can be finished then. Keep a manual save at the start of every chapter. Never use cheats on your trophy save — they disable trophies and saving. The only trophy reported as possibly missable is <strong>Positive Mental Attitude</strong>: do Lucia&rsquo;s balcony meditation in Chapter 1, the morning after Down to Earth, before that chapter ends.</p>
+    <ol class="stages" id="stages"></ol>
+  </section>
+
+  <section class="notes">
+    <h2>How this guide is built</h2>
+    <ul>
+      <li>Names, descriptions and grades are the official PlayStation list as published by Exophase and PSNProfiles (55 trophies, 28 hidden until earned).</li>
+      <li>Every guide is written in our own words for this entry and cites its sources beside it — GTABase and PowerPyx first, with other launch-era guides where they add something. Where no source has confirmed the exact steps yet, the guide says so plainly instead of guessing.</li>
+      <li>Missable flags and the roadmap stages are built from the official descriptions: which story chapters and missions, which collectibles and counts, in what order.</li>
+      <li>Works fully offline: this page loads only its own files (style.css, app.js, data/trophies.json) and makes no network request. Progress lives in your browser&rsquo;s local storage; export writes a file you can import back later.</li>
+      <li>Unofficial fan guide. Not affiliated with, endorsed by, or connected to Rockstar Games. No Rockstar logo, artwork, or game imagery is used.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>GTA 6 Trophy Guide — offline tracker &middot; 55 trophies &middot; Sources cited per trophy: GTABase, PowerPyx, Exophase, PSNProfiles.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
